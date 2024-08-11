@@ -1,0 +1,14 @@
+version: 3
+
+tasks:
+  setup:
+    cmds:
+      - mkdir -p /tmp
+      - docker run -d -p 6333:6333 -p 6334:6334 -v $(pwd)/tmp/qdrant_storage:/qdrant/storage:z qdrant/qdrant
+  generate:
+    cmds:
+      - python generate_dataset.py
+      - python generate_collection.py
+  query:
+    cmds:
+      - python query.py
