@@ -9,7 +9,7 @@ Embeddings are generated using a local LLM from `SentenceTransformers`, which is
 The following is the architecture of the project:
 
 <p align="center">
-  <img src="./docs/overview.drawio.png" alt="architecture" />
+  <img src="./docs/overview.png" alt="architecture" />
 </p>
 
 ## Acknowledgements
